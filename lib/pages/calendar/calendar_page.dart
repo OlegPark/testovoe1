@@ -19,7 +19,7 @@ class _CalendarPageState extends State<CalendarPage> {
       appBar: AppBar(
         backgroundColor: backgroundColorPage,
         leading: IconButton(
-          icon: Icon(
+          icon: const Icon(
             Icons.close,
             color: Colors.grey,
           ),
@@ -29,7 +29,7 @@ class _CalendarPageState extends State<CalendarPage> {
         ),
         actions: [
           TextButton(
-            child: Text(
+            child: const Text(
               'Сегодня',
               style: TextStyle(
                 fontSize: 18,
@@ -47,12 +47,12 @@ class _CalendarPageState extends State<CalendarPage> {
       ),
       body: Column(
         children: [
-          DaysN(),
+          const DaysN(),
           Expanded(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: ListView.builder(
-                itemCount: null, // infinite scrolling
+                itemCount: null,
                 itemBuilder: (context, index) {
                   DateTime monthDate = _focusedDate.add(Duration(days: index * 30));
                   DateTime firstDayOfMonth = DateTime(monthDate.year, monthDate.month, 1);
@@ -69,14 +69,14 @@ class _CalendarPageState extends State<CalendarPage> {
                               padding: const EdgeInsets.only(left: 20),
                               child: Text(
                                 firstDayOfMonth.year.toString(),
-                                style: TextStyle(fontSize: 16, color: Colors.grey),
+                                style: const TextStyle(fontSize: 16, color: Colors.grey),
                               ),
                             ),
                             Padding(
                               padding: const EdgeInsets.only(left: 20),
                               child: Text(
                                 DateFormat.MMMM().format(firstDayOfMonth),
-                                style: TextStyle(fontSize: 24),
+                                style: const TextStyle(fontSize: 24),
                               ),
                             ),
                           ],
@@ -112,7 +112,7 @@ class _CalendarPageState extends State<CalendarPage> {
                                 alignment: Alignment.center,
                                 children: [
                                   Text(
-                                    isWithinMonth ? date.day.toString() : '', // Hide dates from other months
+                                    isWithinMonth ? date.day.toString() : '',
                                     style: TextStyle(
                                       fontSize: 18,
                                       color: isToday ? Colors.black : Colors.black,
@@ -124,7 +124,7 @@ class _CalendarPageState extends State<CalendarPage> {
                                       child: Container(
                                         width: 6,
                                         height: 6,
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           shape: BoxShape.circle,
                                           color: Colors.red,
                                         ),

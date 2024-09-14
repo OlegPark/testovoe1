@@ -42,12 +42,12 @@ class MoodDiary extends StatelessWidget {
         children: [
           SingleChildScrollView(
             child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20),
+              padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(height: 80),
+                  const SizedBox(height: 80),
                   ValueListenableBuilder(
                     valueListenable: _isStatisticsMode,
                     builder: (context, isStatisticsMode, child) {
@@ -58,7 +58,7 @@ class MoodDiary extends StatelessWidget {
                       }
                     },
                   ),
-                  Text(
+                  const Text(
                     'Что чувствуешь?',
                     style: TextStyle(
                       color: colortext,
@@ -66,43 +66,43 @@ class MoodDiary extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(height: 20),
-                  HorizontalCardList(),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
+                  const HorizontalCardList(),
+                  const SizedBox(height: 20),
                   EmotionWrap1(),
-                  SizedBox(height: 36),
-                  Text(
+                  const SizedBox(height: 36),
+                  const Text(
                     'Уровень стресса',
                     style: TextStyle(
                         color: colortext,
                         fontSize: 16,
                         fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(height: 20),
-                  SliderWidget1(),
-                  SizedBox(height: 36),
-                  Text(
+                  const SizedBox(height: 20),
+                  const SliderWidget1(),
+                  const SizedBox(height: 36),
+                  const Text(
                     'Самооценка',
                     style: TextStyle(
                         color: colortext,
                         fontSize: 16,
                         fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(height: 20),
-                  SliderWidget2(),
-                  SizedBox(height: 36),
-                  Text(
+                  const SizedBox(height: 20),
+                  const SliderWidget2(),
+                  const SizedBox(height: 36),
+                  const Text(
                     'Заметки',
                     style: TextStyle(
                         color: colortext,
                         fontSize: 16,
                         fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(height: 20),
-                  NotesWidget(),
-                  SizedBox(height: 35),
-                  ButtonSave(),
-                  SizedBox(height: 250,),
+                  const SizedBox(height: 20),
+                  const NotesWidget(),
+                  const SizedBox(height: 35),
+                  const ButtonSave(),
+                  const SizedBox(height: 250,),
                 ],
               ),
             ),

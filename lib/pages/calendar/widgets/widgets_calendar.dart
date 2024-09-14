@@ -7,7 +7,7 @@ class DaysN extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         Text('Пн', style: TextStyle(color: Colors.grey, fontSize: 12),),

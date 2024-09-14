@@ -60,8 +60,8 @@ class _SwitchMSState extends State<SwitchMS> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Image.asset('assets/images/stats.png', width: 15, height: 15),
-                        SizedBox(width: 5),
-                        Text(
+                        const SizedBox(width: 5),
+                        const Text(
                           'Статистика',
                           style: TextStyle(
                             fontSize: 12,
@@ -94,8 +94,8 @@ class _SwitchMSState extends State<SwitchMS> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Image.asset('assets/images/diary.png', width: 15, height: 15),
-                        SizedBox(width: 5),
-                        Text(
+                        const SizedBox(width: 5),
+                        const Text(
                           'Дневник настроения',
                           style: TextStyle(
                             fontSize: 12,
@@ -130,8 +130,8 @@ class _SwitchMSState extends State<SwitchMS> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Image.asset('assets/images/diary.png', width: 15, height: 15),
-                        SizedBox(width: 5),
-                        Text(
+                        const SizedBox(width: 5),
+                        const Text(
                           'Дневник настроения',
                           style: TextStyle(
                             fontSize: 12,
@@ -164,8 +164,8 @@ class _SwitchMSState extends State<SwitchMS> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Image.asset('assets/images/stats.png', width: 15, height: 15),
-                        SizedBox(width: 5),
-                        Text(
+                        const SizedBox(width: 5),
+                        const Text(
                           'Статистика',
                           style: TextStyle(
                             fontSize: 12,
@@ -240,7 +240,7 @@ class _HorizontalCardListState extends State<HorizontalCardList> {
                       color: Colors.grey.withOpacity(0.1),
                       spreadRadius: 2,
                       blurRadius: 4,
-                      offset: Offset(0, 2),
+                      offset: const Offset(0, 2),
                     ),
                   ],
                   border: _isSelected[index]
@@ -255,7 +255,7 @@ class _HorizontalCardListState extends State<HorizontalCardList> {
                     ),
                     Text(
                       (getCardText(index)),
-                      style: TextStyle(fontSize: 11),
+                      style: const TextStyle(fontSize: 11),
                     ),
                   ],
                 ),
@@ -310,7 +310,7 @@ class _SliderWidget1State extends State<SliderWidget1> {
             color: Colors.grey.withOpacity(0.2),
             spreadRadius: 6,
             blurRadius: 5,
-            offset: Offset(0, 3),
+            offset: const Offset(0, 3),
           ),
         ],
       ),
@@ -318,7 +318,7 @@ class _SliderWidget1State extends State<SliderWidget1> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Transform.translate(
-            offset: Offset(0, 16),
+            offset: const Offset(0, 16),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: List.generate(
@@ -330,7 +330,7 @@ class _SliderWidget1State extends State<SliderWidget1> {
                           color: Colors.grey,
                           borderRadius: BorderRadius.circular(25),
                         ),
-                        margin: EdgeInsets.symmetric(
+                        margin: const EdgeInsets.symmetric(
                           horizontal: 20,
                         ),
                       )),
@@ -341,7 +341,7 @@ class _SliderWidget1State extends State<SliderWidget1> {
           ),
           SliderTheme(
             data: SliderTheme.of(context).copyWith(
-              thumbShape: RoundSliderThumbShape(
+              thumbShape: const RoundSliderThumbShape(
                   enabledThumbRadius: 6,
               ),    
             ),
@@ -410,7 +410,7 @@ class _SliderWidget2State extends State<SliderWidget2> {
             color: Colors.grey.withOpacity(0.2),
             spreadRadius: 6,
             blurRadius: 5,
-            offset: Offset(0, 3),
+            offset: const Offset(0, 3),
           ),
         ],
       ),
@@ -418,7 +418,7 @@ class _SliderWidget2State extends State<SliderWidget2> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Transform.translate(
-            offset: Offset(0, 16),
+            offset: const Offset(0, 16),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: List.generate(
@@ -430,7 +430,7 @@ class _SliderWidget2State extends State<SliderWidget2> {
                           color: Colors.grey,
                           borderRadius: BorderRadius.circular(25),
                         ),
-                        margin: EdgeInsets.symmetric(
+                        margin: const EdgeInsets.symmetric(
                           horizontal: 20,
                         ),
                       )),
@@ -441,7 +441,7 @@ class _SliderWidget2State extends State<SliderWidget2> {
           ),
           SliderTheme(
             data: SliderTheme.of(context).copyWith(
-              thumbShape: RoundSliderThumbShape(
+              thumbShape: const RoundSliderThumbShape(
                   enabledThumbRadius: 6,
               ),    
             ),
@@ -462,7 +462,7 @@ class _SliderWidget2State extends State<SliderWidget2> {
             ),
           ),
           Transform.translate(
-            offset: Offset(0, -10),
+            offset: const Offset(0, -10),
             child: const Padding(
               padding: EdgeInsets.symmetric(horizontal: 20),
               child: Row(
@@ -506,11 +506,11 @@ class NotesWidget extends StatelessWidget {
             color: Colors.grey.withOpacity(0.5),
             spreadRadius: 1,
             blurRadius: 2,
-            offset: Offset(0, 2), // тень
+            offset: const Offset(0, 2),
           ),
         ],
       ),
-      child: TextField(
+      child: const TextField(
         maxLines: 3,
         style: TextStyle(fontSize: 14),
         decoration: InputDecoration(
@@ -531,20 +531,20 @@ class ButtonSave extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 44,
-      width: MediaQuery.of(context)
-          .size
-          .width,
+      width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: orangeColor,
-        borderRadius:
-            BorderRadius.circular(69),
+        borderRadius: BorderRadius.circular(69),
       ),
       child: Center(
-        child: Text(
-          'Сохранить',
-          style: TextStyle(
-            fontSize: 20,
-            color: Colors.white,
+        child: InkWell(
+          onTap: () {},
+          child: const Text(
+            'Сохранить',
+            style: TextStyle(
+              fontSize: 20,
+              color: Colors.white,
+            ),
           ),
         ),
       ),
@@ -597,7 +597,7 @@ class _EmotionContainer1State extends State<EmotionContainer1> {
       },
       child: Container(
         height: 21,
-        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
         decoration: BoxDecoration(
           color: _isSelected ? orangeColor : Colors.white,
           borderRadius: BorderRadius.circular(3),
