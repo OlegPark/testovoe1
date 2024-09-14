@@ -546,7 +546,24 @@ class ButtonSave extends StatelessWidget {
       ),
       child: Center(
         child: InkWell(
-          onTap: () {},
+          onTap: () {
+            showDialog(
+              context: context,
+              builder: (context) {
+                return AlertDialog(
+                  content: const Text('Результаты сохранены'),
+                  actions: [
+                    TextButton(
+                      child: const Text('ОК'),
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                      },
+                    ),
+                  ],
+                );
+              },
+            );
+          },
           child: const Text(
             'Сохранить',
             style: TextStyle(
