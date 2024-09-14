@@ -1,16 +1,19 @@
-# testovoe1
+<h1 align="center">testovoe1</h1>
 
-A new Flutter project.
+<div align="center">
 
-## Getting Started
+[![Flutter](https://img.shields.io/badge/flutter-44D0FA?logo=flutter&style=for-the-badge&logoColor=white)](https://flutter.dev/)
+[![Dart](https://img.shields.io/badge/Dart-30B7F3?logo=dart&style=for-the-badge&logoColor=white)](https://dart.dev/)
+![Static Badge](https://img.shields.io/badge/Platform-Android%20%7C%20IOS%20%7C%20Web-green)
 
-This project is a starting point for a Flutter application.
+</div>
 
-A few resources to get you started if this is your first Flutter project:
+<p align="center">
+     Application for searching GitHub users
+</p>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+<p align="center">
+     Displays no more than 100 users because there is a limit on requests to the Github API
+</p>
