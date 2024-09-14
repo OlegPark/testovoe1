@@ -9,8 +9,8 @@
 </div>
 
 
-| ![1](https://github.com/user-attachments/assets/feb11800-660d-4672-85d4-d2ec8fb54992) | ![2](https://github.com/user-attachments/assets/008c7af6-38c2-4ee4-ac0d-9bc84c8e4768) |
+| ![1](https://github.com/user-attachments/assets/7ad52fe4-07a2-4dfa-938a-02750ab9db34) | ![2](https://github.com/user-attachments/assets/15d60718-010c-43b1-b662-54eeedba1784) |
 | :------------: | :------------: |
 
-| ![3](https://github.com/user-attachments/assets/cd9c0b00-bd8a-49f4-b1ac-9c9913e78cac) | ![4](https://github.com/user-attachments/assets/ff02dce6-6d3b-4b9c-bff7-c69bafb246bc) |
+| ![3](https://github.com/user-attachments/assets/09e2a25c-083c-4ebf-afdc-e6a2b4569977) | ![4](https://github.com/user-attachments/assets/49fccf1d-ab6a-41d6-bfb7-ed861074f3ee) |
 | :------------: | :------------: |
