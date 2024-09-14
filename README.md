@@ -8,8 +8,9 @@
 
 </div>
 
-| ![pages](https://github.com/user-attachments/assets/760284e9-be21-4c22-8b8b-250b9060591e) | ![pages](https://github.com/user-attachments/assets/c45a0c8e-bd27-4966-9883-fdf78eff3005) |
+
+| ![1](https://github.com/user-attachments/assets/feb11800-660d-4672-85d4-d2ec8fb54992) | ![2](https://github.com/user-attachments/assets/008c7af6-38c2-4ee4-ac0d-9bc84c8e4768) |
 | :------------: | :------------: |
 
-| ![pages](https://github.com/user-attachments/assets/2ec99351-b5d6-4b35-bc3c-701366b64eee) | ![pages](https://github.com/user-attachments/assets/86273fab-02f8-4edd-b5f3-192d36b00477) |
+| ![3](https://github.com/user-attachments/assets/cd9c0b00-bd8a-49f4-b1ac-9c9913e78cac) | ![4](https://github.com/user-attachments/assets/ff02dce6-6d3b-4b9c-bff7-c69bafb246bc) |
 | :------------: | :------------: |
