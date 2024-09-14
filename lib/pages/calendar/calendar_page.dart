@@ -3,6 +3,8 @@ import 'package:intl/intl.dart';
 import 'package:testovoe1/pages/calendar/widgets/widgets_calendar.dart';
 import 'package:testovoe1/theme/theme.dart';
 
+import 'widgets/y_calendar_page.dart';
+
 class CalendarPage extends StatefulWidget {
   @override
   _CalendarPageState createState() => _CalendarPageState();
@@ -43,6 +45,21 @@ class _CalendarPageState extends State<CalendarPage> {
               });
             },
           ),
+          TextButton(
+            child: const Text(
+              '>',
+              style: TextStyle(
+                fontSize: 18,
+                color: Colors.grey,
+              ),
+            ),
+            onPressed: () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => YearlyCalendarPage()),
+              );
+            },
+          ),
         ],
       ),
       body: Column(
@@ -76,7 +93,7 @@ class _CalendarPageState extends State<CalendarPage> {
                               padding: const EdgeInsets.only(left: 20),
                               child: Text(
                                 DateFormat.MMMM().format(firstDayOfMonth),
-                                style: const TextStyle(fontSize: 24),
+                                style: const TextStyle(fontSize: 24, color: colortext, fontWeight: FontWeight.bold),
                               ),
                             ),
                           ],
@@ -115,7 +132,7 @@ class _CalendarPageState extends State<CalendarPage> {
                                     isWithinMonth ? date.day.toString() : '',
                                     style: TextStyle(
                                       fontSize: 18,
-                                      color: isToday ? Colors.black : Colors.black,
+                                      color: isToday ? colortext : colortext,
                                     ),
                                   ),
                                   if (isToday)
