@@ -8,9 +8,14 @@
 
 </div>
 
+</div>
 
+<p align="center">
+    
 | ![1](https://github.com/user-attachments/assets/7ad52fe4-07a2-4dfa-938a-02750ab9db34) | ![2](https://github.com/user-attachments/assets/15d60718-010c-43b1-b662-54eeedba1784) |
 | :------------: | :------------: |
 
 | ![3](https://github.com/user-attachments/assets/09e2a25c-083c-4ebf-afdc-e6a2b4569977) | ![4](https://github.com/user-attachments/assets/49fccf1d-ab6a-41d6-bfb7-ed861074f3ee) |
 | :------------: | :------------: |
+
+</p>
