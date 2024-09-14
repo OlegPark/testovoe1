@@ -5,6 +5,7 @@ import 'widgets/widgets_mood_diary.dart';
 
 class MoodDiary extends StatelessWidget {
   final ValueNotifier<bool> _isStatisticsMode = ValueNotifier(true);
+  final ValueNotifier<int> _selectedEmotion = ValueNotifier(-1);
 
   @override
   Widget build(BuildContext context) {
@@ -67,10 +68,33 @@ class MoodDiary extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 20),
-                  const HorizontalCardList(),
+                  HorizontalCardList(
+                    onEmotionSelected: (index) {
+                      _selectedEmotion.value = index;
+                    },
+                  ),
                   const SizedBox(height: 20),
-                  EmotionWrap1(),
-                  const SizedBox(height: 36),
+                  ValueListenableBuilder(
+                    valueListenable: _selectedEmotion,
+                    builder: (context, selectedEmotion, child) {
+                      if (selectedEmotion == 0) {
+                        return EmotionWrap1();
+                      } else if (selectedEmotion == 1) {
+                        return EmotionWrap2();
+                      } else if (selectedEmotion == 2) {
+                        return EmotionWrap3();
+                      } else if (selectedEmotion == 3) {
+                        return EmotionWrap4();
+                      } else if (selectedEmotion == 4) {
+                        return EmotionWrap5();
+                      } else if (selectedEmotion == 5) {
+                        return EmotionWrap6();
+                      } else {
+                        return Container();
+                      }
+                    },
+                  ),
+                  const SizedBox(height: 15),
                   const Text(
                     'Уровень стресса',
                     style: TextStyle(
@@ -102,7 +126,9 @@ class MoodDiary extends StatelessWidget {
                   const NotesWidget(),
                   const SizedBox(height: 35),
                   const ButtonSave(),
-                  const SizedBox(height: 250,),
+                  const SizedBox(
+                    height: 250,
+                  ),
                 ],
               ),
             ),
